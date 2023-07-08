@@ -1,0 +1,195 @@
+/* Start Global Selectors */
+:root {
+    --main-color: #3a6cf4;
+    --section-bg: #000016;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+:is(.services .box,
+.services h2, .projects h2,
+.contact h2,
+.contact .box) {
+    color: var(--main-color);
+}
+.box {
+    max-width: 25rem;
+}
+@media (max-width: 47.9375rem) {
+    .box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* End Global Selectors */
+/*Start Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    background-color: #f0f0f0;
+}
+.navbar li a {
+    font-weight: 500!important;
+    color: var(--main-color);
+}
+.navbar li a:hover {
+    color: #601cfc!important;
+}
+@media (max-width: 28rem) {
+    header {
+        height: 4.8125rem;
+    }
+    .navbar > .container {
+        justify-content: center;
+    }
+}
+/* End Header */
+/* Start Banner */
+.banner {
+    background: url("../images/background.jpeg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.banner-info {
+    left: 10%;
+    top: 30%;
+}
+.banner-heading {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 4rem;
+}
+@media (max-width: 28rem) {
+    .banner-info {
+        max-width: 32.9375rem;
+    }
+    .banner-heading {
+        font-size: 3.5rem!important;
+    }
+}
+.banner-heading + p {
+    font-weight: 500;
+}
+.banner-heading + p + .btn {
+    width: 10.625rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.banner-heading + p + .btn:hover {
+    scale: 1.1;
+}
+.banner-icons svg {
+    font-size: 1.25rem;
+}
+/* End Banner */
+/* Start Services */
+:is(.services,
+.projects,
+.contact) {
+    padding: 4.375rem 0;
+}
+.services .box {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.services .box:hover {
+    scale: 1.1;
+}
+.services .box-info p {
+    max-width: 23.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+/* End Services */
+/* Start Projects */
+.projects {
+    background-color: var(--section-bg);
+}
+.projects .box {
+    background-color: #fff;
+    
+}
+.services-info span {
+    font-size: .875rem;
+    font-weight: 500;
+}
+.services-info .more-details a {
+    color: var(--main-color);
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: .9375rem;
+}
+:is(.projects .box,
+.projects .box img ) {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.projects .box:hover {
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.projects .box:hover img {
+    opacity: .9;
+}
+.projects .more-details a:hover {
+    color: #601cfc;
+}
+.contact .box {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.contact .box:hover {
+    scale: 1.1;
+}
+:is(.phone:hover,
+.email:hover) {
+    color: #707070!important;
+}
+/* End Projects */
+/* Start Contact */
+/* End Contact*/
+/* Start Footer */
+.footer {
+    background-color: var(--section-bg);
+}
+.footer p span {
+    color: var(--main-color);
+}
+/* End Footer */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 75px;
+    right: 25px;
+    display: none;
+    }
